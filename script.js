@@ -1,20 +1,19 @@
-function loadContent(page) {
-    const contentContainer = document.getElementById('content');
-    
-    // Update class active
-    document.querySelectorAll('nav a').forEach(link => {
-        link.classList.remove('active');
-        if(link.dataset.page === page) link.classList.add('active');
-    });
+const toggleTheme = document.getElementById('toggleTheme');
+const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const body = document.body;
 
-    // Memuat konten dari file eksternal
-    fetch(`${page}.html`)
-        .then(response => response.text())
-        .then(html => {
-            contentContainer.innerHTML = html;
-            history.pushState({page}, null, `?page=${page}`);
-        })
-        .catch(error => {
-            contentContainer.innerHTML = '<p>Halaman tidak ditemukan</p>';
-        });
-}
+// Toggle dark/light theme
+toggleTheme.addEventListener('click', () => {
+  body.classList.toggle('bg-gray-900');
+  body.classList.toggle('text-white');
+  body.classList.toggle('bg-gray-100');
+  body.classList.toggle('text-gray-900');
+});
+
+// Toggle mobile menu
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('flex');
+});
+

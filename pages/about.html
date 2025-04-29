@@ -3,71 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografi - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="#"><img src="logo.jpg" alt="Logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-<section class="about">
-    <h2>About Me</h2>&nbsp;
-    <div class="bio">
-    <div class="profile-image">
-        <img src="logo2.jpg" alt="profile-image">
-    </div>
-        <p>Halo, saya Ramdani Firmansyah — pecinta dunia olahraga bela diri dan fashion aktif.</p>
-        <p>Sejak kecil, saya tumbuh dengan semangat disiplin dari mulai latihan Silat, judo, sambo,</p>
-        <p> dan gulat yang kemudian berkembang menjadi kecintaan</p>
-        <p>pada gaya hidup aktif dan ekspresi diri lewat fashion.</p>
-    </div>
-    <div class="skills">
-</section>
-</body>
-
-<footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-section links">
-            <h3>Tautan Cepat</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section contact">
-            <h3>Kontak</h3>
-            <ul>
-                <li><i class="fas fa-envelope"></i> ramsyah@gmail.com</li>
-                <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
-                <li><i class="fas fa-map-marker-alt"></i> Sukabumi, Indonesia</li>
-            </ul>
-        </div>
-
-        <div class="footer-section social">
-            <h3>Sosial Media</h3>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center text-2xl font-bold text-blue-600">
+                <img src="assets/logo.jpg" alt="Logo" class="h-10 w-10 object-cover rounded-full mr-2">
+                RamSyah
             </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="footer-bottom">
-        <p>&copy; 2025 Biografi Website. All rights reserved</p>
-    </div>
-</footer>
+    <main class="container mx-auto p-6">
+        <section id="about" class="section">
+            <h2 class="section-title text-center">About Me</h2>
+            <p class="section-text mt-4">
+                Hi, I'm Ramdani Firmansyah, a passionate software developer. I have a strong background in web development, specializing in front-end technologies like React, HTML, CSS, and JavaScript. 
+                Apart from coding, I am deeply interested in martial arts and active fashion, which allows me to embrace discipline and creativity in every aspect of my life.
+            </p>
+            <h3 class="mt-6 text-xl font-bold">Skills & Expertise</h3>
+            <ul class="mt-2 list-disc list-inside">
+                <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
+                <li>UX/UI Design</li>
+                <li>Responsive Design & Mobile-First Development</li>
+                <li>API Integration & RESTful Services</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-white text-center p-6 shadow-inner">
+        <p class="text-gray-500">&copy; 2025 MyBio. All rights reserved.</p>
+    </footer>
+</body>
 </html>
